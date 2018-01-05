@@ -1,0 +1,35 @@
+{
+	"name": "MigrateMyLinks",
+	"version": "1.0.0",
+	"author": [
+		"Jesús Martínez (Ciencia Al Poder)"
+	],
+	"url": "https://github.com/ciencia/mediawiki-extensions-MigrateMyLinks",
+	"descriptionmsg": "migratemylinks-desc",
+	"license-name": "MIT",
+	"type": "parserhook",
+	"config": {
+		"MigrateMyLinksMaxRevisionId": -1,
+		"MigrateMyLinksDomain": ""
+	},
+	"MessagesDirs": {
+		"MigrateMyLinks": [
+			"i18n"
+		]
+	},
+	"AutoloadClasses": {
+		"MigrateMyLinks": "MigrateMyLinks.classes.php"
+	},
+	"Hooks": {
+		"InternalParseBeforeLinks": [
+			"MigrateMyLinks::onInternalParseBeforeLinks"
+		],
+		"ParserAfterParse": [
+			"MigrateMyLinks::onParserAfterParse"
+		],
+		"LinkerMakeExternalLink": [
+			"MigrateMyLinks::onLinkerMakeExternalLink"
+		]
+	},
+	"manifest_version": 1
+}

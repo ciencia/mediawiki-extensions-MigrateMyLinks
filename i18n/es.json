@@ -1,0 +1,6 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"migratemylinks-desc": "Reemplaza enlaces en páginas editadas antes de cambiar la URL del wiki, para que apunten a la URL actual"
+}
