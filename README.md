@@ -3,7 +3,7 @@ Extension to migrate external links pointing to the own wiki after moving it
 to another host
 
 When a page contains external links pointing to a defined host, it rewrites
-them (only when viewing the page, not when reading) so they point to the
+them (only when viewing the page, not when editing) so they point to the
 current URL of the wiki instead.
 
 This is useful when people post external links pointing to the own wiki on
